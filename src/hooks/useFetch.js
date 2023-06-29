@@ -1,15 +1,14 @@
-import { useEffect, useState } from "react"
-import { getFetchData } from "../api/api"
+import {useEffect, useState} from "react"
+import {getFetchData} from "../api/api"
 
-const useFetch = (url, dependencies)=>{
-    const [data,setData] = useState([])
+const useFetch = (url, dependencies) => {
+    const [data, setData] = useState([])
     const [loading, setLoading] = useState(false)
 
-    useEffect(()=>{
+    useEffect(() => {
         setLoading(true)
-        const getData = async ()=>{
+        const getData = async () => {
             const data = await getFetchData(url)
-
             setData(data)
             setLoading(false)
         }

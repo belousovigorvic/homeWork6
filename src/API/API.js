@@ -1,12 +1,12 @@
 import axios from "axios"
 
-const BASE_ULR  = 'https://jsonplaceholder.typicode.com'
+const BASE_ULR = 'https://jsonplaceholder.typicode.com'
 
-const requester  = axios.create({baseURL: BASE_ULR})
+const requester = axios.create({baseURL: BASE_ULR})
 
 export const postUrl = 'posts'
 
-export const getFetchData = async (url) =>{
+export const getFetchData = async (url) => {
     const response = await requester.get(url)
     return response.data
 }

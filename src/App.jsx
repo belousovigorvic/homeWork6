@@ -2,17 +2,15 @@ import './App.css'
 import Counter from "./Components/Counter/Counter.jsx";
 import GetData from "./Components/GetData/GetData.jsx";
 import Header from "./Components/Header/Header.jsx";
-import {Route, Router, Routes} from "react-router-dom";
+import {Route, Routes} from "react-router-dom";
 import Images from "./Components/Images/Images.jsx";
 import OnePost from "./Components/OnePost/OnePost.jsx";
-import Links from "./Components/Links/Links.jsx";
 
 
 function App() {
     return (
         <>
             <Header/>
-
             <Routes>
                 <Route path='/counter' element={<Counter/>}/>
                 <Route path='/getdata' element={<GetData/>}/>
