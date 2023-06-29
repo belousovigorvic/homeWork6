@@ -5,6 +5,18 @@
   text-align: center;
 }
 
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.link {
+  margin-right: 15px;
+}
+
 .logo {
   height: 6em;
   padding: 1.5em;

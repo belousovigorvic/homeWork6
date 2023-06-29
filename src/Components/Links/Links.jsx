@@ -10,7 +10,7 @@ const Links = () => {
     return (
         <div>
             {data.map((item) => (
-                <Link key={item.id} to={`/${item.id}`}>
+                <Link className='link' key={item.id} to={`/${item.id}`}>
                     {item.id}
                 </Link>
             ))}
